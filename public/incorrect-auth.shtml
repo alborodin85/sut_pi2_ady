@@ -1,0 +1,18 @@
+<!--#set var="title" value="Вход" --><!--#include virtual="/includes/header.shtml" -->
+
+<div class="container d-flex align-items-center justify-content-center" style="height: 90vh;">
+
+    <div class="card">
+        <div class="card-header bg-danger text-white">
+            Ошибка аутентификации
+        </div>
+        <div class="card-body">
+            <p>Ошибка ввода логина/пароля! Попробуйте снова!</p>
+            <div class="form-floating mt-3">
+                <a href="/" class="btn btn-secondary">Назад</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

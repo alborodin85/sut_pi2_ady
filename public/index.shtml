@@ -1,5 +1,25 @@
-<?php
-kukumba
-?>
-https://sut-pi2-ady.it5.team/
-<!--#include virtual="/includes/include1.html"-->
+<!--#set var="title" value="Вход" --><!--#include virtual="/includes/header.shtml" -->
+
+<div class="container d-flex align-items-center justify-content-center" style="height: 90vh;">
+
+    <div class="card">
+        <div class="card-header">
+            Вход
+        </div>
+        <div class="card-body">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="login">
+                <label for="floatingInput">Логин</label>
+            </div>
+            <div class="form-floating mt-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Пароль</label>
+            </div>
+            <div class="form-floating mt-3">
+                <button type="button" class="btn btn-primary">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->
