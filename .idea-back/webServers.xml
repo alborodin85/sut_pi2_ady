@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="83dfc9db-91c7-4b40-ab2d-044a7659ba40" name="t9300-app__it5_dev__sut_pi2_ady" url="https://sut-pi2-ady.it5.team/">
+        <fileTransfer rootFolder="/home/it5_dev/sites/sut/pi2_ady/sut_pi2_ady" accessType="SFTP" host="t9300-app.it5.team" port="1814" sshConfigId="a4e6a35b-890e-4e7a-b152-5a2c6608ea61" sshConfig="it5_dev@t9300-app.it5.team:1814 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

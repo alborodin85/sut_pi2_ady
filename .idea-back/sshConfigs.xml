@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="t9300-app.it5.team" id="a4e6a35b-890e-4e7a-b152-5a2c6608ea61" keyPath="C:\borodin_admin\Перечень проектов\SSH\_borodin_admin_i3\borodin_admin_putty.ppk" port="1814" nameFormat="DESCRIPTIVE" username="it5_dev" />
+    </configs>
+  </component>
+</project>
