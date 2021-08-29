@@ -1,0 +1,37 @@
+<!--#set var="title" value="Лог-файлы" --><!--#include virtual="/includes/header.shtml" -->
+
+<div class="container d-flex justify-content-center mt-3">
+  <div class="card">
+    <div class="card-header">
+      Обрабатываемые лог-файлы
+    </div>
+    <div class="card-body">
+      <div class="form-floating mt-3">
+        <h5>Пути к обрабатываемым файлам и папкам:</h5>
+        <p class="text-muted">(задаются в конфигурационном файле <code>/kernel/config.ini</code>):</p>
+        <ol class="list-group form-text">
+          <li class="list-group-item ">/etc/apache2/error.log</li>
+          <li class="list-group-item">/var/log/phplogs/php7.0_errors.log</li>
+          <li class="list-group-item">/var/log/mysql</li>
+          <li class="list-group-item">/home/ady_infoservice/sites/amo-to-bx24/ab24_d1/amo-to-bx24/storage/logs</li>
+          <li class="list-group-item">/var/log/redis</li>
+          <li class="list-group-item">/var/log/mongodb/mongodb.log</li>
+        </ol>
+        <h5 class="mt-4">Шаблоны имен обрабатываемых файлов:</h5>
+        <p class="text-muted">(задаются в конфигурационном файле <code>/kernel/config.ini</code>):</p>
+        <ol class="list-group form-text">
+          <li class="list-group-item ">/*.log/</li>
+          <li class="list-group-item">/*.log.\d/</li>
+          <li class="list-group-item">/*.txt/</li>
+        </ol>
+
+        <hr class="mt-5" />
+        <p>
+          <a href="04-characterization-process.shtml" class="btn btn-primary"><strong>Этап-1:</strong> Выявление характеристик</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

@@ -1,0 +1,93 @@
+<!--#set var="title" value="Настройка временных рядов" --><!--#include virtual="/includes/header.shtml" -->
+
+<!--suppress HtmlFormInputWithoutLabel -->
+<div class="container d-flex justify-content-center mt-3">
+    <div class="card">
+        <div class="card-header">
+            <strong>Этап-6:</strong> Выбор характеристик для анализа временных рядов
+        </div>
+        <div class="card-body">
+            <div class="form-floating mt-3">
+                <h5>Характеристики, для анализа временных рядов</h5>
+                <p class="text-muted">Укажите для каких характеристик имеет смысл проводить анализ временных рядов.
+                    Динамику значений можно посмотреть на Графиках.</p>
+                <div class="row align-items-center text-center fw-bold">
+                    <div class="col-3">
+                        Идентификатор
+                    </div>
+                    <div class="col">
+                        Название
+                    </div>
+                    <div class="col-3 pe-4">
+                        Анализ
+                    </div>
+                </div>
+                <hr/>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_01:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Число запросов к серверу" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_02:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Число ответов с ошибками" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_03:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Загрузка физической памяти" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_04:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Свободное место на диске" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-3 d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary">Сохранить</a>
+                </p>
+                <hr class="mt-5" />
+                <p>
+                    <a href="09-time-series-process.shtml" class="btn btn-primary"><strong>Этап-7:</strong> Анализ временных рядов</a>
+                    <a href="07-identified-conditions.shtml" class="btn btn-secondary"><strong>Этап-5:</strong> Состояния сервера</a>
+                    <a href="10-server-info.shtml" class="btn btn-secondary">Графики</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

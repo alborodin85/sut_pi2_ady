@@ -1,0 +1,86 @@
+<!--#set var="title" value="Найденные характеристики" --><!--#include virtual="/includes/header.shtml" -->
+
+<!--suppress HtmlFormInputWithoutLabel -->
+<div class="container d-flex justify-content-center mt-3">
+    <div class="card">
+        <div class="card-header">
+            <strong>Этап-2:</strong> Определение названий найденных характеристик
+        </div>
+        <div class="card-body">
+            <div class="form-floating mt-3">
+                <h5>Характеристики, выявленные из текстовых логов:</h5>
+                <p class="text-muted">Укажите для каждого выявленного параметра осмысленное название и единицу измерения.
+                    Динамику значений можно посмотреть на Графиках.</p>
+                <div class="row align-items-center text-center fw-bold">
+                    <div class="col-3">
+                        Идентификатор
+                    </div>
+                    <div class="col">
+                        Название
+                    </div>
+                    <div class="col-3">
+                        Ед. изм
+                    </div>
+                </div>
+                <hr/>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_01:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Число запросов к серверу" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="text" value="запр./час" class="form-control" />
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_02:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Число ответов с ошибками" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="text" value="отв./час" class="form-control" />
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_03:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Загрузка физической памяти" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="text" value="%" class="form-control" />
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-3">
+                        <label class="col-form-label fw-bold">Параметр_04:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" value="Свободное место на диске" class="form-control" />
+                    </div>
+                    <div class="col-3">
+                        <input type="text" value="%" class="form-control" />
+                    </div>
+                </div>
+
+
+
+                <p class="mt-3 d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary">Сохранить</a>
+                </p>
+                <hr class="mt-5" />
+                <p>
+                    <a href="10-server-info.shtml" class="btn btn-secondary"><strong>Этап-3:</strong> Графики</a>
+                    <a href="06-classification-process.shtml" class="btn btn-primary"><strong>Этап-4:</strong> Процесс классификации</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

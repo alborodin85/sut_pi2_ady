@@ -1,0 +1,10 @@
+<!--#set var="title" value="Выявление характеристик..." --><!--#include virtual="/includes/header.shtml" -->
+
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 90vh;">
+    <div class="spinner-border text-primary" style="width: 9rem; height: 9rem;"></div>
+    <div class="lead mt-3"><strong>Этап-1:</strong> процесс выявления характеристик из текстовых логов...</div>
+    <a href="03-logs-list.shtml" class="btn btn-primary  mt-3" title="После этого процесс придется запускать сначала">Завершить досрочно</a>
+
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

@@ -1,0 +1,10 @@
+<!--#set var="title" value="Процесс анализа временных рядов..." --><!--#include virtual="/includes/header.shtml" -->
+
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 90vh;">
+    <div class="spinner-border text-primary" style="width: 9rem; height: 9rem;"></div>
+    <div class="lead mt-3"><strong>Этап-7:</strong> процесс анализа временных рядов...</div>
+    <a href="08-time-series-settings.shtml" class="btn btn-primary  mt-3" title="После этого процесс придется запускать сначала">Завершить досрочно</a>
+
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->

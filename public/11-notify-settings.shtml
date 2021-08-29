@@ -1,0 +1,142 @@
+<!--#set var="title" value="Настройка временных рядов" --><!--#include virtual="/includes/header.shtml" -->
+
+<!--suppress HtmlFormInputWithoutLabel -->
+<div class="container d-flex justify-content-center mt-3">
+    <div class="card w-100">
+        <div class="card-header">
+            Настройка уведомлений
+        </div>
+        <div class="card-body">
+            <div class="form-floating mt-3">
+                <h5>Кому направлять уведомления:</h5>
+                <div class="form-floating">
+                    <input type="email"
+                           class="form-control"
+                           id="floatingInput"
+                           placeholder="name@example.com" />
+                    <label for="floatingInput">email-адрес для уведомлений</label>
+                </div>
+
+                <h5 class="mt-5">При каких состояниях уведомлять:</h5>
+                <p class="text-muted">Укажите при наступлении каких состояний сервера необходимо присылать
+                    уведомление</p>
+                <div class="row align-items-center text-center fw-bold">
+                    <div class="col-2">
+                        Идентификатор
+                    </div>
+                    <div class="col">
+                        Название
+                    </div>
+                    <div class="col-2 pe-4">
+                        Уведом.
+                    </div>
+                </div>
+                <hr/>
+                <div class="row align-items-center mb-3">
+                    <div class="col-2 fw-bold">Состояние_01</div>
+                    <div class="col">Нормальная работа</div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-2 fw-bold">Состояние_02</div>
+                    <div class="col">Завтра будет сбой</div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-2 fw-bold">Состояние_03</div>
+                    <div class="col">Остановка из-за аварии</div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-5">При каких значениях параметров уведомлять:</h5>
+                <p class="text-muted">Укажите критические значения параметров и срок, за который необходимо
+                    предупредить</p>
+                <div class="row align-items-center text-center fw-bold">
+                    <div class="col-2">
+                        Идентификатор
+                    </div>
+                    <div class="col-4">
+                        Название
+                    </div>
+                    <div class="col-2">
+                        Значение
+                    </div>
+                    <div class="col-2">
+                        Срок
+                    </div>
+                    <div class="col-2 pe-4">
+                        Уведом.
+                    </div>
+                </div>
+                <hr/>
+                <div class="row align-items-center mb-3 text-muted"
+                     title="Не активно: необходим анализ временных рядов">
+                    <div class="col-2 fw-bold">Параметр_01</div>
+                    <div class="col-4">Число запросов к серверу (запр./час)</div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm" disabled/></div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm" disabled/></div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-2 fw-bold">Параметр_02</div>
+                    <div class="col-4">Число ответов с ошибками (отв./час)</div>
+                    <div class="col-2"><input type="text" value="12" class="form-control form-control-sm"/></div>
+                    <div class="col-2"><input type="text" value="1d 12h" class="form-control form-control-sm"/></div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3 text-muted"
+                     title="Не активно: необходим анализ временных рядов">
+                    <div class="col-2 fw-bold">Параметр_03</div>
+                    <div class="col-4">Загрузка физической памяти (%)</div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm" disabled/></div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm" disabled/></div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                    <div class="col-2 fw-bold">Параметр_04</div>
+                    <div class="col-4">Свободное место на диске (%)</div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm"/></div>
+                    <div class="col-2"><input type="text" value="" class="form-control form-control-sm"/></div>
+                    <div class="col-2">
+                        <div class="form-check form-switch mx-auto w-25">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-3 d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary">Сохранить</a>
+                </p>
+                <hr class="mt-5"/>
+                <p>
+                    <a href="10-server-info.shtml" class="btn btn-secondary">Назад</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->
