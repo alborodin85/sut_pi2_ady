@@ -16,7 +16,7 @@
                 <label for="floatingPassword">Пароль</label>
             </div>
             <div class="form-floating mt-3">
-                <button type="button" class="btn btn-primary">Войти</button>
+                <a href="10-server-info.shtml" class="btn btn-primary">Войти</a>
             </div>
         </div>
     </div>
