@@ -1,0 +1,63 @@
+<!--#set var="title" value="Информация о сервере" --><!--#include virtual="/includes/header.shtml" -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+        integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+<script src="js/ChartsData/ChartBuilderStrategy.js"></script>
+<script src="js/ChartsData/NumberOfRequests.js"></script>
+<script src="js/ChartsData/NumberOfErrors.js"></script>
+<script src="js/ChartsData/MemoryLoading.js"></script>
+<script src="js/ChartsData/FreeDiskSpace.js"></script>
+<script src="js/ChartsData/SummaryChartBuilder.js"></script>
+
+<div class="container d-flex justify-content-center mt-3 flex-column">
+    <div class="row">
+        <div class="col">
+            <h1>Информация о состоянии сервера</h1>
+        </div>
+    </div>
+    <div class="blockquote mx-auto">Текущее состояние: <span class="badge bg-warning">Завтра будет сбой</span></div>
+    <div>
+        <canvas id="summaryDiagram"></canvas>
+        <hr class="mt-5"/>
+        <canvas id="numberOfRequests" class="mt-5"></canvas>
+        <canvas id="numberOfErrors" class="mt-5"></canvas>
+        <canvas id="memoryLoading" class="mt-5"></canvas>
+        <canvas id="freeDiskSpace" class="mt-5"></canvas>
+    </div>
+    <script>
+        let numberOfRequests = new NumberOfRequests();
+        numberOfRequests.chartBuilderStrategy.buildDiagram('numberOfRequests');
+        let numberOfErrors = new NumberOfErrors();
+        numberOfErrors.chartBuilderStrategy.buildDiagram('numberOfErrors');
+        let memoryLoading = new MemoryLoading();
+        memoryLoading.chartBuilderStrategy.buildDiagram('memoryLoading');
+        let freeDiskSpace = new FreeDiskSpace();
+        freeDiskSpace.chartBuilderStrategy.buildDiagram('freeDiskSpace');
+        let summaryChartBuilder = new SummaryChartBuilder();
+        summaryChartBuilder.buildDiagram('summaryDiagram');
+    </script>
+
+    <div class="row">
+        <div class="col">
+            <hr class="mt-5"/>
+            <p>
+                <a href="05-identified-characteristics.shtml" class="btn btn-secondary">
+                    <strong>Этап-2:</strong> Названия характеристик
+                </a>
+                <a href="07-identified-conditions.shtml" class="btn btn-secondary">
+                    <strong>Этап-5:</strong> Названия состояний
+                </a>
+                <a href="08-time-series-settings.shtml" class="btn btn-secondary">
+                    <strong>Этап-6:</strong> Настройка временных рядов
+                </a>
+            </p>
+            <p>
+                <a href="11-notify-settings.shtml" class="btn btn-secondary">Настройка уведомлений</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/includes/footer.shtml" -->
