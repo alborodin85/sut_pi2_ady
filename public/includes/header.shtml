@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="ru">
 <head>
     <!-- Обязательные метатеги -->
@@ -25,14 +26,22 @@
                 Переход
             </button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/incorrect-auth.shtml">Ошибка аутентификации</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="/">01 В начало</a></li>
+                <li><a class="dropdown-item" href="/02-incorrect-auth.shtml">02 Ошибка аутентификации</a></li>
+                <li><a class="dropdown-item" href="/03-logs-list.shtml">03 Лог-файлы</a></li>
+                <li><a class="dropdown-item" href="/04-characterization-process.shtml">04 Выявление характеристик...</a></li>
+                <li><a class="dropdown-item" href="/05-identified-characteristics.shtml">05 Найденные характеристики</a></li>
+                <li><a class="dropdown-item" href="/06-classification-process.shtml">06 Выявление состояний...</a></li>
+                <li><a class="dropdown-item" href="/07-identified-conditions.shtml">07 Найденные состояния</a></li>
+                <li><a class="dropdown-item" href="/08-time-series-settings.shtml">08 Настройка временных рядов</a></li>
+                <li><a class="dropdown-item" href="/09-time-series-process.shtml">09 Анализ временных рядов...</a></li>
+                <li><a class="dropdown-item" href="/10-server-info.shtml">10 Состояние сервера</a></li>
+                <li><a class="dropdown-item" href="/11-notify-settings.shtml">11 Настройка уведомлений</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="container d-flex mt-3">
-    <a href="#" class="ms-auto">Выйти</a>
+    <a href="/" class="ms-auto">Выйти</a>
 </div>
